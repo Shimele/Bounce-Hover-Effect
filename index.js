@@ -70,6 +70,7 @@ for(let i= 0; i < 50; i++){ //creat 50 balls
 //Below the parent function (parent forloop) to carry the whole execution
 
 function loop(){
+    
     //loops whatever is in this function, about 30 to 60 frames per second
     window.requestAnimationFrame(loop)
     //get height and width of client viewport
@@ -84,7 +85,8 @@ function loop(){
         let ball = balls[i]
 
         //drawing the ball inside the canvas
-        context.fillStyle = ball.color //first give ball a red color
+        context.fillStyle = ball.color //first give ball color
+        
         context.beginPath();
         context.arc(ball.x, ball.y, ball.radius, 0, Math.PI*2)//draw arc in a 360 degree circle. 0 = start position, PI*2 = end position 360 degrees
         context.fill()//last fill the ball with the color above
