@@ -7,10 +7,8 @@
 }
 .happy-balls{
     padding-left: 600px;
-    padding-top: 20px;
     color: white;
     font-family: 'Indie Flower', cursive;
-    font-size: 30px
 }
 canvas{
     width: 100%;
