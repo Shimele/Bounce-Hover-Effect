@@ -9,13 +9,22 @@ let context = document.querySelector("canvas").getContext("2d");
 
 //my ball constructor function
 const Ball = function(x,y,radius){
-    this.color = "rgb(" + Math.floor(Math.random() * 256 ) + "," + Math.floor(Math.random() * 256 ) + "," + Math.floor(Math.random() * 256 ) ;")"//randomnized rgb color
+    this.color = "rgb(" + Math.floor(Math.random() * 256 ) + "," + Math.floor(Math.random() * 256 ) + "," + Math.floor(Math.random() * 256 ) + "," +
+    Math.ceil(Math.random() * 10) / 10;")"//randomnized rgb color
     this.direction = Math.random() * Math.PI * 2; //set direction of ball to flow randomly in 360degree
-    this.radius = radius;
+    this.radius = Math.random() * 20 + 14;
     this.speed = Math.random() * 3 + 1 //random speed from 0 -4
     this.x = x;
     this.y = y
 }
+
+var mousex = 0;
+var mousey = 0;
+
+addEventListener("mousemove", function() {
+  mousex = event.clientX;
+  mousey = event.clientY;
+});
 
 //START//
 //function to update ball position and movement (object literal)
