@@ -1,4 +1,4 @@
-# Bounce-Hover-Effect
+# HTML5-Canvas Bouncing Ball effect
 A Bouncing and hver effect App with HTML and Javascript
 ![alt text]()
 
