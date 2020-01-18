@@ -12,7 +12,7 @@ const Ball = function(x,y,radius){
     this.color = "rgb(" + Math.floor(Math.random() * 256 ) + "," + Math.floor(Math.random() * 256 ) + "," + Math.floor(Math.random() * 256 ) + "," +
     Math.ceil(Math.random() * 10) / 10;")"//randomnized rgb color, last parameter is to give colors transparent effect
     this.direction = Math.random() * Math.PI * 2; //set direction of ball to flow randomly in 360degree
-    this.radius = Math.random() * 20 + 14;// give balls random/varying sizes
+    this.radius = Math.random() * 30 + 14;// give balls random/varying sizes
     this.speed = Math.random() * 3 + 1 //random speed from 0 -4
     this.x = x;
     this.y = y
@@ -63,8 +63,8 @@ let xCordinates = document.documentElement.clientWidth * 0.5 //set start width p
 let yCordinates = document.documentElement.clientHeight * 0.5 //set start height point to middle of client viewport
 
 //make a loop to creat balls then push in balls array
-for(let i= 0; i < 50; i++){ //creat 50 balls
-    balls.push(new Ball(xCordinates,yCordinates, 25))//creat each ball from constructor function and push inside array of balls
+for(let i= 0; i < 100; i++){ //creat 50 balls
+    balls.push(new Ball(xCordinates,yCordinates, this.radius))//creat each ball from constructor function and push inside array of balls
 }
 //END//
 
@@ -95,16 +95,10 @@ function loop(){
 
         ball.updatePosition(width, height) //call update position function to make ball move
     }
-    function onMouseOver(event ) {   
-        // highlight the mouseover target
-        alert('hovering')
-    
-    }
 
 }
 
 //END//
 loop(); //finally call the loop function
-onMouseOver()
 
 
