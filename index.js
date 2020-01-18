@@ -94,10 +94,17 @@ function loop(){
         context.fill()//last fill the ball with the color above
 
         ball.updatePosition(width, height) //call update position function to make ball move
-
+    }
+    function onMouseOver(event ) {   
+        // highlight the mouseover target
+        alert('hovering')
+    
     }
 
 }
+
 //END//
 loop(); //finally call the loop function
+onMouseOver()
+
 
