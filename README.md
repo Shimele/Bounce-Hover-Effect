@@ -4,4 +4,4 @@ A Bouncing and hver effect App with HTML and Javascript
 
 ## Live demo
 
-https://shimele.github.io/Bounce-Hover-Effect/
+https://shimele.github.io/Canvas-Bouncing-Ball-Effect/
